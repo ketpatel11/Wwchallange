@@ -1,4 +1,4 @@
-function getRandomInt(min, max) {
+    function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
@@ -27,9 +27,10 @@ function getRandomInt(min, max) {
             console.log('Error')
         }
     }
+    
     // get random array of size 500 
-  var the_array = generateRandomArray(500);
-  console.log(the_array.join(','));
+    var the_array = generateRandomArray(500);
+    console.log(the_array.join(','));
 
-  // print the 9th smallest number.
-  printNthSmallestFromArray(the_array, 9);
+    // print the 9th smallest number.
+    printNthSmallestFromArray(the_array, 9);
