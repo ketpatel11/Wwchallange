@@ -29,13 +29,19 @@ function printNthSmallestFromArray(source_array, n){
     }
 }
 
-// get random array of size 500 
-var the_array = generateRandomArray(500);
-console.log('The Generated Array with 500 random numbers');
-console.log(the_array.join(','));
 
 var myArgs = process.argv.slice(2);
 
 var nthElement = myArgs[0];
-// print the 9th smallest number.
-printNthSmallestFromArray(the_array, nthElement);
+
+// check if the number is passed and is numeric
+if ( nthElement && ! isNaN(nthElement)) {
+        // get random array of size 500 
+    var the_array = generateRandomArray(500);
+    console.log('The Generated Array with 500 random numbers');
+    console.log(the_array.join(','));
+    // print the 9th smallest number.
+    printNthSmallestFromArray(the_array, nthElement);
+}else{
+    console.log(" Please pass the nthelement as parameter, Ex: GenerateAndPrintSmallestNth.js 9")
+}
