@@ -42,6 +42,8 @@ if ( nthElement && ! isNaN(nthElement)) {
     console.log(the_array.join(','));
     // print the 9th smallest number.
     printNthSmallestFromArray(the_array, nthElement);
-}else{
+    }
+    else
+    {
     console.log(" Please pass the nthelement as parameter, Ex: GenerateAndPrintSmallestNth.js 9")
-}
+    }
