@@ -8,7 +8,7 @@ function getRandomInt(min, max) {
 function generateRandomArray(size){
     var randomArray = [];
     for (i=0;i<size;++i) {
-        randomArray[i]= getRandomInt(0, 1000);
+        randomArray[i]= getRandomInt(0, 500);
     }
     return randomArray;
 }
